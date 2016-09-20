@@ -19,22 +19,27 @@
 
 <body>
     <div class="container">
-      <h1>HAPPY</h1>
-      <h1>30th</h1>
-      <h1>Birthday</h1>
-      <h1>Matt</h1>
-
-      <a href="ken.html">Click here <3</a>
+        <h4>A Special Message From Yuri</h4>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-
     <script>
+        $(function () {
+          $('#submit').on('click', function () {
+            var answer = $("input[name=optradio]:checked").val();
 
+            if (answer === "correct") {
+              alert('Correct!');
+              window.location = "final.html";
+            } else {
+              alert('Nope! Try again =)');
+            }
 
+            return false;
+          });
+        });
     </script>
 </body>
 
