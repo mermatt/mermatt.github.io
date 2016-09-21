@@ -32,10 +32,10 @@
                 <label><input type="radio" name="optradio">Green</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">Dark Brown</label>
+                <label><input type="radio" name="optradio" value="correct">Dark Brown</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio" value="correct">Light Brown</label>
+                <label><input type="radio" name="optradio">Light Brown</label>
             </div>
             <div class="radio">
                 <label><input type="radio" name="optradio">Black</label>
@@ -56,10 +56,10 @@
             var answer = $("input[name=optradio]:checked").val();
 
             if (answer === "correct") {
-              alert('Correct!');
+              alert('Good job!');
               window.location = "final.html";
             } else {
-              alert('Nope! Try again =)');
+              alert('残念❤️　プランク３０秒やろう❤️');
             }
 
             return false;
